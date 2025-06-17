@@ -10,6 +10,26 @@
             "Logradouro": "Avenida das Americas",
             "uf": "RJ",
             "Bairro": "Barra da Tijuca"
+        },
+        {
+            "nome": "thales de mileto",
+            "email": "tico@gmail.com",
+            "senha": "tico123",
+            "numero": 102,
+            "Complemento": null,
+            "cep": "28895-559",
+            "logradouro": "Rua Belo Horizonte",
+            "complemento": "até 499/500",
+            "unidade": "",
+            "bairro": "Jardim Bela Vista",
+            "localidade": "Rio das Ostras",
+            "uf": "RJ",
+            "estado": "Rio de Janeiro",
+            "regiao": "Sudeste",
+            "ibge": "3304524",
+            "gia": "",
+            "ddd": "22",
+            "siafi": "2921"
         }
     ]
 }

@@ -90,6 +90,8 @@ if decisao == 'R': #usuario se registrando
                             print('numero invalido tente um valido.')
                     except ValueError: 
                         print("Digite apenas números.")
+            break
+                
 
     usuario_novo ={ #criei um dicionario pra depois adicionar no json
         'nome': nome,
