@@ -1,5 +1,5 @@
-import json                        ''' made by Joao Moncorvo '''
-import requests
+import json                 
+import requests  
 import os
 
 os.system('cls')
@@ -19,7 +19,7 @@ def consultar_endereco_por_cep(cep): #funcao pra consultar o endereco com base n
             'bairro': dados.get('bairro')
             }
         return resultado
-    except Exception as e:
+    except Exception as e:  
         print(f"ocorreu um erro: {e}")
         return None
 
@@ -100,7 +100,6 @@ if decisao == 'R': #usuario se registrando
         **endereco #funcao nova que descobri. Nao da pra fazer apendd com dicionario, entao se voce fizer ** ele simplesmente vai, se ta funcionando nao mexa =)
     }
 
-    print(usuario_novo)
     dados['usuarios'].append(usuario_novo)
     print(f'usuario registrado com sucesso, bem vindo {nome}!')
 
@@ -130,8 +129,14 @@ elif decisao == 'E': #pra entrar eh facil, basicamente ele verifica se ha usuari
                 senhaCerta = False
         if senhaCerta:
             break
+        else:
+            print('senha errada, tente novamente. ')
+            continue
 if senhaCerta and emailReg:
-    print('USUARIO LOGADO COM SUCESSO!! ')
+    for usuario in dados['usuarios']:
+        if usuario['email'] == email:
+            nome = usuario['nome']
+    print(f'USUARIO LOGADO COM SUCESSO!! BEM VINDO {nome} ')
 
 with open('superdb.json', 'w', encoding='utf-8') as db: #msm coisa que o outro mas pra escrever
     json.dump(dados, db, indent=4, ensure_ascii=False)   #o indent=4 serve pra ele usar a identacao padrao e pra ficar alinhado, o ensure_ascii=True serve pra aceitar melhor o alfabeto portugues-BR
