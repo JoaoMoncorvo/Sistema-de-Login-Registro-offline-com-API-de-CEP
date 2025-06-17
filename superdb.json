@@ -1,0 +1,15 @@
+{
+    "usuarios": [
+        {
+            "nome": "teste da silva",
+            "email": "teste@silva.com",
+            "senha": "teste123",
+            "cep": "22631022",
+            "numero": 123,
+            "complemento": "paris cafe",
+            "Logradouro": "Avenida das Americas",
+            "uf": "RJ",
+            "Bairro": "Barra da Tijuca"
+        }
+    ]
+}

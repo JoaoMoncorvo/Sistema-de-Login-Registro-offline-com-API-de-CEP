@@ -1,0 +1,5 @@
+Fiz esse programa para um trabalho da faculdade que pedia o uso obrigatório de uma API. Escolhi a do ViaCEP que como o nome já diz, mostra os dados de um CEP ou encontra um CEP com base nos dados de endereço. Para usar você precisa digitar pip install requests no terminal, pois uso uma API online e preciso dessa biblioteca para fazer as requisições.
+
+Resumindo: quando o usuário quer se registrar, o programa armazena os dados dele em um JSON que simula um banco de dados local. O sistema pergunta se ele sabe o CEP. Se souber, basta digitar, e o programa preenche automaticamente as outras informações como rua, bairro, UF etc, Além de pedir o número da casa e complemento (opcional). Se o usuário não souber o CEP, o programa pede o UF, cidade e rua, e então, usando a API, encontra possíveis CEPs e mostra para o usuário escolher.
+
+No login, o programa verifica se existe um usuário com aquele email. Se existir, pede a senha e se a senha estiver correta, o usuário consegue logar. O programa ainda está simples, mas pretendo fazer melhorias, como usar hash para proteger as senhas, usar um banco de dados de verdade, melhorar a verificacao(nao fazer gambiarra).
